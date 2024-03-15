@@ -1,0 +1,28 @@
+
+body { background: #000; }
+
+div#Svg1 {
+  max-width: 80%;
+  margin: 0 auto;
+  background: #000;
+  background-image: url(harley-quinn-2-1.jpg);
+  background-size: cover;
+  font-size: 0;
+}
+div#Svg1 svg {
+  background: #000;
+  mix-blend-mode: darken;
+}
+div#Svg1 svg polyline {
+  fill: none;
+  stroke: rgb(209, 8, 249);
+  stroke-width: 220;
+  stroke-dasharray: 20000;
+  stroke-dashoffset: 20000;
+  animation: scribble 2s linear forwards;
+}
+@keyframes scribble {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
